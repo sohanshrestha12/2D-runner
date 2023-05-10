@@ -25,7 +25,7 @@ public class Animation {
     }
 
     private static String getImagePath() {
-        return "E:\\sohan\\Java\\JavaProjectM\\2D-Runner\\Game\\Assets\\Char" + imageIndex + ".png";
+        return "E:\\JavaGame\\2D-Runner\\Game\\Assets\\Char" + imageIndex + ".png";
     }
     public static Image getCurrenImage() {
         return new ImageIcon(getImagePath()).getImage();
