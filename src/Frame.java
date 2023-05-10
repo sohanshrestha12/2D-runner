@@ -78,6 +78,7 @@ public class Frame extends mainHero{
         timer0.start();
         //Start Button
         startButton = new JButton("Start");
+        startButton.setFocusPainted(false);
         startButton.setBounds(500,240,100,50);
         startButton.setFont(new Font("Arial", Font.BOLD, 24));
         startButton.addActionListener(new ActionListener() {
@@ -223,9 +224,9 @@ public class Frame extends mainHero{
                 obstacle3Rec = new Rectangle(oxOffset + 270, oy2, 100, height);
                 obstacle4Rec = new Rectangle(oxOffset + 550, oy2+100, 100, height);
                 obstacle5Rec = new Rectangle(oxOffset + 1040, oy2, 100, height);
-                g.setColor(Color.BLUE);
-                g.fillRect(obstacle3Rec.x, obstacle3Rec.y, obstacle3Rec.width, obstacle3Rec.height);
-                g.fillRect(obstacle4Rec.x, obstacle4Rec.y, obstacle4Rec.width, obstacle4Rec.height);
+//                g.setColor(Color.BLUE);
+//                g.fillRect(obstacle3Rec.x, obstacle3Rec.y, obstacle3Rec.width, obstacle3Rec.height);
+//                g.fillRect(obstacle4Rec.x, obstacle4Rec.y, obstacle4Rec.width, obstacle4Rec.height);
 
                 g.drawImage(obstaclebackground, oxOffset + 270, oy2, 150, height, null);
                 g.drawImage(obstaclebackground, oxOffset + 550, oy2+100, 150, height, null);
